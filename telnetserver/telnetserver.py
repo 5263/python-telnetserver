@@ -302,10 +302,6 @@ class TelnetServer(object):
                 # if there was a message in the data
                 if message:
 
-                    # remove any spaces, tabs etc from the start and end of
-                    # the message
-                    message = message.strip()
-
                     # add a message occurence to the new events list with the
                     # client's id number, and the message
                     self._new_events.append((self._EVENT_MESSAGE, id,
